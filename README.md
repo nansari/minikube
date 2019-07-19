@@ -145,8 +145,10 @@ Kubernetes v1.14.0
 Finally, see what other commands minikube offers using```minikube help``` 
 
 One cluster is not enough for you? Create one more. It will create a new VM in VirtualBox. **_Do it only if you have enough RAM_**
-Command created new VM, assign new IP and configure kubectl CLI to connect to new cluster by default
+Stop running minikube before creating a new one. The command creates new VM, assign a new IP and configure kubectl CLI default setting to connect to new cluster.
 ```
+$ minikube stop
+
 $ minikube start -p second-cluster
 😄  minikube v1.0.0 on linux (amd64)
 🤹  Downloading Kubernetes v1.14.0 images in the background ...
