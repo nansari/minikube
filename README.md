@@ -1,11 +1,11 @@
 # minikube
 
 ## Objective
-Create a single page document to experience kubernetes in minikube that can be followed sequentially and completed in couple of hours.
+Create a single page document to experience kubernetes in minikube that can be followed sequentially and completed in a couple of hours.
 
 ## minikube installation
 
-Follow [Installation document](https://kubernetes.io/docs/tasks/tools/install-minikube/) to install minikube and pre-requisit on your Windows, Linux or MacOS.
+Follow [Installation document](https://kubernetes.io/docs/tasks/tools/install-minikube/) to install minikube and pre-requisite on your Windows, Linux or MacOS.
 
 ## Try minikube commands
 
@@ -98,7 +98,7 @@ $ minikube addons list
 - storage-provisioner-gluster: disabled
 ```
 
-Let's try to enable and then disable heapster (used to collect metrics). It is being replaced with metrics-server in newer version of kubernetes
+Let's try to enable and then disable heapster (used to collect metrics). It is being replaced with metrics-server in a newer version of kubernetes
 ```
 $ minikube addons enable heapster
 ✅  heapster was successfully enabled
@@ -135,7 +135,7 @@ PRETTY_NAME="Buildroot 2018.05"
 
 # ps -aef|grep kub|cut -c 1-140
   ....
-  truncated - these are componenets of kubernetes master and node
+  truncated - these are components of kubernetes master and node
   ....
 
 # kubelet --version
@@ -145,7 +145,7 @@ Kubernetes v1.14.0
 Finally, see what other commands minikube offers using```minikube help``` 
 
 One cluster is not enough for you? Create one more. It will create a new VM in VirtualBox. **_Do it only if you have enough RAM_**
-Stop running minikube before creating a new one. The command creates new VM, assign a new IP and configure kubectl CLI default setting to connect to new cluster.
+Stop running minikube before creating a new one. The command creates a new VM, assign a new IP and configure kubectl CLI default setting to connect to the new cluster.
 ```
 $ minikube stop
 
@@ -174,6 +174,6 @@ $
 
 Next, try to [use set of kubectl commands to deploy a web server in kubernetes](https://github.com/nansari/kubernetes/blob/master/README.md) running inside minikube
 
-At last ```minikube stop``` if you are done!
+```minikube stop``` stops minikube.
 
 
